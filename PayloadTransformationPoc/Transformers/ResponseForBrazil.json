@@ -1,0 +1,9 @@
+﻿{
+  "pais": "#valueof($.country)",
+  "cidade": "#valueof($.city)",
+  "estado": "#valueof($.state)",
+  "endereco": "#xconcat(#valueof($.address1), #constant_comma(), #valueof($.address2))",
+  "numero": "#tointeger(#valueof($.address3))",
+  "cep": "#valueof($.zipCode)",
+  "pobox": "#valueof($.isPoBox)"
+}

@@ -1,0 +1,11 @@
+﻿{
+  "country": "#valueof($.pais)",
+  "city": "#valueof($.cidade)",
+  "state": "#valueof($.estado)",
+  "province": "",
+  "address1": "#substring(#valueof($.endereco),0,#firstindexof(#valueof($.endereco),#constant_comma()))",
+  "address2": "#substring(#valueof($.endereco),#add(#firstindexof(#valueof($.endereco),#constant_comma()),1),#subtract(#length(#valueof($.endereco)),#add(#length(#substring(#valueof($.endereco),0,#firstindexof(#valueof($.endereco),#constant_comma()))),1)))",
+  "address3": "#tostring(#valueof($.numero))",
+  "zipCode": "#valueof($.cep)",
+  "isPoBox": "#tointeger(#valueof($.pobox))"
+}

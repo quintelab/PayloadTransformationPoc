@@ -1,0 +1,11 @@
+﻿{
+  "country": "#valueof($.country)",
+  "city": "#valueof($.city)",
+  "address": {
+    "address1": "#valueof($.address1)",
+    "address2": "#valueof($.address2)",
+    "address3": "#valueof($.address3)"
+  },
+  "eircode": "#valueof($.zipCode)",
+  "pobox": "#toboolean(#valueof($.isPoBox))"
+}
